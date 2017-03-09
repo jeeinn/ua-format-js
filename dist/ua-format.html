@@ -1,0 +1,9 @@
+<script src="../src/ua-format.js"></script>
+<script>
+    var ua = new uaFormat();
+    console.time('UAFormat');
+    var res = ua.getResult();
+    console.timeEnd('UAFormat');
+    console.log(res);
+    document.write(JSON.stringify(res));
+</script>
