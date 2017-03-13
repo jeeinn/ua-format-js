@@ -53,6 +53,9 @@ ZTE`
 * defaults是默认值数组（二维表示自定义值，自定义值优先使用）
 
 ## 例子
+
+1. HTML引入示例
+
 ```html
 <!doctype html>
 <html>
@@ -113,6 +116,44 @@ ZTE`
 </html>
 ```
 
+2. node使用
+
+```
+npm install ua-format-js --save
+```
+
+js文件示例
+
+```
+var formater = require('ua-format-js').uaFormat();
+var uaString = 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; ONE A2001 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/6.0 Mobile Safari/537.36';
+
+formater.setUA(uaString);
+console.log(formater.getResult());
+
+// result
+// {
+//     ua: 'Mozilla/5.0(Linux;U;Android6.0.1;zh-cn;ONEA2001Build/MMB29M)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/37.0.0.0MQQBrowser/6.0MobileSafari/537.36',
+//     os: {
+//         name: 'Android',
+//         version: '6.0.1'
+//     },
+//     browser: {
+//         name: 'QQBrowser',
+//         version: '6.0'
+//     },
+//     device: {
+//         model: 'ONEA2001',
+//         vendor: 'OnePlus',
+//         type: 'mobile'
+//     },
+//     engine: {
+//         name: 'WebKit',
+//         version: '537.36'
+//     }
+// }
+
+```
 ## 更新
 * v0.0.11 -2017/3/10
     1. 修复一个bug
