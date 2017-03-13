@@ -1,8 +1,11 @@
 <script src="../src/ua-format.js"></script>
 <script>
-    var ua = new uaFormat();
+    var uaString = 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; ONE A2001 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/6.0 Mobile Safari/537.36';
+    var ua = new uaFormat(uaString);
     console.time('UAFormat');
-    var res = ua.getResult();
+//    var res = ua.getResult();
+//    var res = ua.getOS();
+    var res = ua.getDevice();
     console.timeEnd('UAFormat');
     console.log(res);
     document.write(JSON.stringify(res));
