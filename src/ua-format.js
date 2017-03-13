@@ -254,7 +254,7 @@
             }, {                                                                        // Xiaomi mobile
                 patterns:[
                     /android.+;\s(mi\s.+)\sbuild\/\w.+mobile/i,
-                    /android.+;\s(redmi\s.+)\sbuild\/\w.+mobile/i,
+                    /android.+;\s(redmi\s.+)\sbuild\/\w.+mobile/i
                 ],
                 defaults:[[MODEL], [VENDOR,'Xiaomi'], [TYPE, MOBILE]]
             }, {                                                                        // iPad/PlayBook
