@@ -1,7 +1,7 @@
 # ua-format-js
-重复造轮子，一个userAgent解析器(参考UAParser.js)
+重复造轮子，一个userAgent解析器UAFormat.js(参考UAParser.js)
 
-Another wheel，refer to the UAParser.js
+Another wheel，an userAgent parser UAFormat.js (refer to the UAParser.js)
 
 致力于更符合中国特色的浏览器`userAgent`字符串识别与探测！欢迎添砖加瓦
 * 作者 : jeeinn <thinkwei2012@gmail.com>
@@ -63,7 +63,7 @@ ZTE`
 <script type="text/javascript" src="ua-format.min.js"></script>
 <script type="text/javascript">
 
-	var formater = new uaFormat();
+	var formater = new UAFormat();
 
     // 默认使用当前浏览器: window.navigator.userAgent
     console.log(formater.getResult());
@@ -125,7 +125,7 @@ npm install ua-format-js --save
 js文件示例
 
 ```
-var formater = require('ua-format-js').uaFormat();
+var formater = require('ua-format-js').UAFormat();
 var uaString = 'Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; ONE A2001 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 Chrome/37.0.0.0 MQQBrowser/6.0 Mobile Safari/537.36';
 
 formater.setUA(uaString);
@@ -155,12 +155,13 @@ console.log(formater.getResult());
 
 ```
 ## 更新
-* v0.0.11 -2017/3/10
+* v0.0.2 -2017/3/10
     1. 修复一个bug
     2. 兼容nodejs使用
     3. 增加小米、红米、魅族、努比亚、vivo、oppo、1+、乐视、金立手机识别
     4. 增加百度浏览器baiduboxapp识别
     5. 调整部分注释
+    6. 该版本以后，如果只增加正则识别则只更新版本号尾数如0.0.xx，功能性增加则中间位数依次迭代
 * v0.0.1 - 2017/3/8
     1. 实现同原理的`UAParser.js`
     2. 复制`UAParser.js`的所有正则内容
@@ -181,4 +182,5 @@ console.log(formater.getResult());
 
 ## 鸣谢
 * UAParser.js [https://github.com/faisalman/ua-parser-js](https://github.com/faisalman/ua-parser-js)
-* 所有给star的开发者
+* 所有的贡献者
+* 所有给star的开发者、使用者

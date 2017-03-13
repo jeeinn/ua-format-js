@@ -1,9 +1,9 @@
 /**
- * uaFormat.js v0.0.11
+ * UAFormat.js v0.0.2
  * https://github.com/jeeinn/ua-format-js
  *
  * Copyright © 2016 Jeeinn
- * Licensed under MIT
+ * Licensed under GPLv2 & MIT
  * Created by xyw on 2017/3/8.
  */
 
@@ -540,7 +540,7 @@
         }
     };
 
-    var uaFormat = function (uaString) {
+    var UAFormat = function (uaString) {
         var ua = uaString || ((window && window.navigator && window.navigator.userAgent) ? window.navigator.userAgent : EMPTY);
         this.setUA = function (uaString) {
             var uaSet = uaString || EMPTY;
@@ -580,12 +580,12 @@
     if (typeof(exports) !== TYPE_UNDEF) {
         // nodejs 环境
         if ((typeof module !== TYPE_UNDEF) && module.exports) {
-            exports = module.exports = uaFormat;
+            exports = module.exports = UAFormat;
         }
-        exports.uaFormat = uaFormat;
+        exports.UAFormat = UAFormat;
     }else {
         // 浏览器环境
-        window.uaFormat = uaFormat;
+        window.UAFormat = UAFormat;
     }
 
 })(typeof window === 'object' ? window : this);

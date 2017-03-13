@@ -1,9 +1,9 @@
 {
-  "title": "uaFormat.js",
+  "title": "UAFormat.js",
   "name": "ua-format-js",
-  "version": "0.0.11",
+  "version": "0.0.2",
   "author": "Jeeinn <thinkwei2012@gmail.com> (http://jeeinn.com)",
-  "description": "Our name is uaFormat.js, standing on the shoulders of UAParser.js .",
+  "description": "Our name is UAFormat.js, standing on the shoulders of UAParser.js",
   "keywords": [
     "ua",
     "os",
@@ -44,7 +44,7 @@
   ],
   "main": "src/ua-format.js",
   "scripts": {
-    "build": "uglifyjs src/ua-format.js > dist/ua-format.min.js --comments '/uaFormat\\.js/' && uglifyjs src/ua-format.js > dist/ua-format.pack.js --comments '/uaFormat\\.js/' --compress --mangle",
+    "build": "uglifyjs src/ua-format.js > dist/ua-format.min.js --comments '/UAFormat\\.js/' && uglifyjs src/ua-format.js > dist/ua-format.pack.js --comments '/UAFormat\\.js/' --compress --mangle",
     "test": "jshint src/ua-format.js"
   },
   "devDependencies": {
