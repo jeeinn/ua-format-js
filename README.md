@@ -54,7 +54,7 @@ ZTE`
 
 ## 例子
 
-1. HTML引入示例
+* HTML引入示例
 
 ```html
 <!doctype html>
@@ -116,7 +116,7 @@ ZTE`
 </html>
 ```
 
-2. node使用
+* node使用
 
 ```
 npm install ua-format-js --save
