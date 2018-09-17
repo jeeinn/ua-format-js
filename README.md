@@ -5,9 +5,10 @@ Another wheel，an userAgent parser UAFormat.js (refer to the UAParser.js)
 
 致力于更符合中国特色的浏览器`userAgent`字符串识别与探测！欢迎添砖加瓦
 * 作者 : jeeinn <thinkwei2012@gmail.com>
-* 演示地址 : [http://faisalman.github.io/ua-parser-js](http://faisalman.github.io/ua-parser-js)(暂时厚颜无耻的使用UAParser.js的)
 * 源代码  :  [https://github.com/jeeinn/ua-format-js](https://github.com/jeeinn/ua-format-js)
-* 许可  :  GPLv2 & MIT
+* 许可  :  MIT
+* 声明：本项目仅作为研究ua识别学习，如有侵权请Email。
+* 演示地址 : [http://faisalman.github.io/ua-parser-js](http://faisalman.github.io/ua-parser-js)(暂时厚颜无耻的使用UAParser.js的)
 
 ## 方法
 
@@ -155,6 +156,11 @@ console.log(formater.getResult());
 
 ```
 ## 更新
+* v0.0.3 -2018/9/17
+    1. 添加一些常见浏览器qq、2345、line、MiPlus...
+    2. 修改几处变量命名
+    3. 归类正则减少初始化Object
+    4. 开发模式依赖插件因安全问题升级
 * v0.0.2 -2017/3/10
     1. 修复一个bug
     2. 兼容nodejs使用
@@ -174,13 +180,10 @@ console.log(formater.getResult());
 3. 精简不常用ua
 4. 增加自己的演示地址
 
-## 打赏
-
-<img align="center" src="http://jeeinn.com/wp-content/uploads/2017/03/1489039735080-198x300.jpg" alt="支付宝打赏" />
-
-<img align="center" src="http://jeeinn.com/wp-content/uploads/2017/03/mm_facetoface_collect_qrcode_1489039635122-215x300.png" alt="微信打赏" />
-
 ## 鸣谢
-* UAParser.js [https://github.com/faisalman/ua-parser-js](https://github.com/faisalman/ua-parser-js)
-* 所有的贡献者
+* `UAParser.js` [https://github.com/faisalman/ua-parser-js](https://github.com/faisalman/ua-parser-js)
+* 所有`UAParser.js`、本项目的贡献者
 * 所有给star的开发者、使用者
+
+## 打赏
+![请我喝杯咖啡](https://raw.githubusercontent.com/jeeinn/pics/master/alipay-wepay.png)
