@@ -3,6 +3,10 @@
 
 Another wheel，an userAgent parser UAFormat.js (refer to the UAParser.js)
 
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+
+
 致力于更符合中国特色的浏览器`userAgent`字符串识别与探测！欢迎添砖加瓦
 * 作者 : jeeinn <thinkwei2012@gmail.com>
 * 源代码  :  [https://github.com/jeeinn/ua-format-js](https://github.com/jeeinn/ua-format-js)
